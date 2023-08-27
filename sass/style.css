@@ -1,0 +1,29 @@
+.navbar {
+    list-style: none;
+    font-size: 22px;
+    border: 12px solid #00ADB5;
+    border-radius: 50px;
+    text-align: right;
+    padding: 20px 20px ;
+    display: flex;
+    align-items: center;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    border: 10px solid #00ADB5;
+    border-radius: 25px;
+    background-color: #00ADB5;
+}
+
+.navbar li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.navbar-logo{
+    height: auto;
+    width: 280px;
+    margin-right: 67%;
+}
