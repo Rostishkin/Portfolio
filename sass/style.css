@@ -1,29 +1,363 @@
-.navbar {
-    list-style: none;
-    font-size: 22px;
-    border: 12px solid #00ADB5;
+
+*{
+    font-family: 'Montserrat Alternates', sans-serif;
+    scroll-behavior: smooth;
+}
+header{
+    width: 99%;
+    position: fixed;
+    border: 10px solid #00666B;
     border-radius: 50px;
-    text-align: right;
-    padding: 20px 20px ;
+    background-color: white;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0; 
+    left: 0;
+    right: 0;
+}
+.navbar {
+    font-size: 1.2em;
+    padding: 20px 20px 20px 35px;
     display: flex;
     align-items: center;
+    justify-content: space-around;
 }
 
 .navbar a {
     text-decoration: none;
     color: #fff;
-    border: 10px solid #00ADB5;
     border-radius: 25px;
-    background-color: #00ADB5;
+    background-color: #00666B;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 1em;
+    transition: 0.5s;
+    padding: 0.6em ;
 }
-
-.navbar li {
-    display: inline-block;
-    margin-right: 20px;
-}
+.navbar a:hover{
+    color: #e0e0e0;
+    background: rgb(2,0,36);
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(8,179,187,1) 81%, rgba(0,212,255,1) 100%); 
+    font-weight: 600;
+}   
+    
 
 .navbar-logo{
     height: auto;
     width: 280px;
-    margin-right: 67%;
+    padding-left: 2em;
+    color: #00666B;
+    font-size: 1.5em;
+}
+
+/*Home section*/
+.banner-container {
+    width: 100%;
+    min-height: 25vh;
+    margin-top: 10em;
+    border-radius: 15px;
+    background: url("../assets/images/background.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 3em;
+    text-align: center;
+}
+
+.banner-container h2{
+    color: #00666B;
+    font-size: 1.6em;
+}
+.banner-btn a{
+    color: #e0e0e0;
+    background-color: #00666B;
+    text-decoration: none;
+    font-size: 1.4em;
+    border-radius: 30px;
+    padding: 0.6em;
+    margin: 150px;
+}
+
+.banner-btn a:hover{
+  color: #e0e0e0;
+  background: rgb(2,0,36);
+  background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(8,179,187,1) 81%, rgba(0,212,255,1) 100%); 
+}
+.social-icon{
+    font-size: 2em;
+    color: #00666B;
+    margin-left: 3.3em;
+}
+
+/*About section*/
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 4em ;
+}
+
+.about-avatar{
+    border-radius: 35px;
+    background-color: #00666B;
+    width: 15%;
+    margin-right: 2em;
+    flex: 1;
+
+}
+.about-content{
+flex: 3;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.about-header{
+    font-size: 1.5em;
+    color: #e0e0e0;
+    background-color: #00666B;
+    border-radius: 30px;
+    padding: 1em 5em 1em 5em;
+    margin-bottom: 1em;
+}
+.about-text{
+    font-size: 1.2em;
+    color: #00666B;
+    font-weight: 500;
+    text-align: justify;
+}
+
+/*==============PROJECTS=============*/
+.projects-header{
+  font-size: 1.5em;
+  color: #e0e0e0;
+  background-color: #00666B;
+  padding: 1em 5em 1em 5em;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  margin-top: 10em;
+}
+.projects{
+    display: flex;
+    justify-content: space-between;
+    margin: 5em 5em 0em 5em;
+}
+.card {
+    width: 24rem;
+    height: 36rem;
+    border-radius: 25px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    color: transparent;
+    box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+    font-weight: 600;
+  }
+  .card img {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    transition: opacity 0.2s ease-out;
+  }
+  .card h2 {
+    position: absolute;
+    inset: auto auto 30px 30px;
+    margin: 0;
+    transition: inset 0.3s 0.3s ease-out;
+    text-transform: uppercase;
+  }
+  .card p, .card a {
+    position: absolute;
+    opacity: 0;
+    max-width: 85%;
+    transition: opacity 0.3s ease-out;
+  }
+  .card p {
+    inset: auto auto 80px 30px;
+  }
+  .card a {
+    inset: auto auto 40px 30px;
+    color: inherit;
+    text-decoration: none;
+  }
+  .card:hover h2 {
+    inset: auto auto 220px 30px;
+    transition: inset 0.3s ease-out;
+    color: #00666B;
+  }
+  .card:hover p, .card:hover a {
+    opacity: 0.9;
+    transition: opacity 0.5s 0.1s ease-in;
+    color: #00666B;
+  }
+  .card:hover img {
+    transition: opacity 0.3s ease-in;
+    opacity: 0.2;
+  }
+  
+  .material-symbols-outlined {
+    vertical-align: middle;
+  }
+/*===============CERTIFICATES================*/
+
+.center {
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.article-card {
+  width: 350px;
+  height: 250px;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+  transition: all 200ms;
+}
+
+.article-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.article-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.article-card .content {
+  box-sizing: border-box;
+  width: 100%;
+  position: absolute;
+  padding: 30px 20px 20px 20px;
+  height: auto;
+  bottom: 0;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+}
+
+.article-card .date,
+.article-card .title {
+  margin: 0;
+  color: #00666B;
+}
+
+.article-card .date {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 4px;
+}
+
+.article-card .title {
+  font-size: 1.2em;
+  color: #e0e0e0;
+}
+/*===========CONTACT==========*/
+.contact-header{
+  font-size: 1.5em;
+  color: #e0e0e0;
+  background-color: #00666B;
+  padding: 1em 5em 1em 5em;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  margin-top: 1em;
+}
+.contact-text{
+  font-size: 1.2em;
+  color: #00666B;
+  font-weight: 500;
+  text-align: justify;
+  max-width: 35%;
+  margin-left: 1em;
+}
+
+/*contact-form*/
+
+ .contact-form-text {
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #e0e0e0;
+ }
+
+ .contact-form-option{
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #00666B;
+ }
+ input[type=text], select, textarea {
+  width: 100%; 
+  padding: 12px;  
+  border: 1px solid #e0e0e0; 
+  border-radius: 15px; 
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px; 
+  resize: vertical;
+}
+
+
+input[type=submit] {
+  font-weight: 600;
+  background-color: #e0e0e0;
+  color: #00666B;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  border-radius: 30px;
+}
+
+
+input[type=submit]:hover {
+  color: #e0e0e0;
+  background: rgb(2,0,36);
+  background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(8,179,187,1) 81%, rgba(0,212,255,1) 100%); 
+}
+
+
+.container-contact {
+  border-radius: 25px;
+  background-color: #00666B;
+  padding: 20px;
+  width: 35%;
+} 
+
+
+
+/*Footer*/
+
+.footer {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 30px 30px 20px 30px;
+  color: #2f2f2f;
+  background-color: #fff;
+  border-top: 1px solid #e5e5e5;
+  margin-top: 10em;
+}
+
+.footer > * {
+  flex:  1 100%;
+}
+
+.footer__addr {
+  margin-right: 1.25em;
+  margin-bottom: 2em;
+}
+
+.footer__logo {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  text-transform: lowercase;
+  font-size: 1.5rem;
+  color: #00666B;
 }

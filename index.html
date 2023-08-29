@@ -10,17 +10,185 @@
     <meta http-equiv="pragma" content="no-cache">
     <meta http-equiv="expires" content="0">
     <link rel="stylesheet" href="./sass/style.css">
+    <script src="https://kit.fontawesome.com/5e0383a3dd.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat+Alternates:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <title>Rostylav Pylypyak</title>
 </head>
 <body>
-    <header>
-        <ul class="navbar">
-            <img class="navbar-logo" src="./assets/logo/logo_small.png">
-            <li class="navbarlink-"><a href="#accueil">Accueil</a></li>
-            <li class="navbarlink-"><a href="#apropos">À propos</a></li>
-            <li class="navbarlink-"><a href="#projets">Mes projets</a></li>
-            <li class="navbarlink-"><a href="#contact">Contact</a></li>
-        </ul>
+    <header> <!--NavBar-->
+        <a class="navbar-logo" href="#"><i class="fa-solid fa-fingerprint">Rostishkin</i></a>
+        <nav class="navbar">    
+            <a href="#accueil"  class="navbar-link">accueil</a></li>
+            <a href="#about"  class="navbar-link">à propos</a></li>
+            <a href="#projets"  class="navbar-link">projets</a></li>
+            <a href="#contact"  class="navbar-link">contact</a></li>
+        </nav>
     </header>
+    <main>
+        <!--Banner + home-->
+        <section class="banner-container">
+            <div>
+                <h2>Bienvenue sur mon portfolio!</h2>
+                <p>Je m'appelle Rostyslav Pylypyak et je suis développeur front-end.<br>Explorez mon parcours à travers mes travaux.</p>
+            </div>
+            <div class="banner-btn">
+                <a href="#projects">mes projets</a>
+            </div>
+        </section>
+        <!--About Me-->
+        <section>
+            <div class="about">
+                <img class="about-avatar" src="./assets/images/avatars/avatar.png" alt="avatar">
+                <aside class="about-content">
+                    <h3 class="about-header">à propos de moi</h3>
+                    <p class="about-text">Je m'appelle Rostyslav et je suis actuellement à la recherche d'une opportunité d'alternance après avoir suivi avec succès ma formation sur OpenClassrooms. Originaire d'Ukraine et âgé de 27 ans, ma passion pour la technologie, les jeux vidéo et l'animation sont au cœur de ma motivation.
+                        Ce qui me caractérise, c'est ma volonté constante d'apprendre et de percer les mystères du fonctionnement des choses. Cette curiosité innée m'a non seulement guidé dans ma formation, mais elle continue également à me stimuler dans ma recherche d'alternance.
+                        Mon esprit d'équipe est une force sur laquelle je m'appuie avec confiance. Travailler en collaboration avec des personnes aux horizons variés m'inspire et me pousse à donner le meilleur de moi-même. Associant mes compétences techniques à ma créativité, je suis prêt à relever de nouveaux défis en tant que développeur web au sein d'une équipe dynamique.</p>
+                </aside>
+            </div>
+        </section>
+        <!--Mes projets-->
+        <section>
+        <h3 class="projects-header">mes projets</h3>
+        <div class="projects">
+            <div class = "card">
+                <img src="./assets/images/projets/booki.png" alt="booki">
+                <div class="card-content">
+                  <h2>
+                    Booki
+                  </h2>
+                  <p>
+                    Création de la page d'accueil d"une agence de voyage avec HTML & CSS afin de maitriser les bases de développement web.
+                  </p>
+                  <a href="https://github.com/Rostishkin/Projet02-HTML-CSS-Booki" class="button">
+                    Clickez ici pour decouvrir 
+                    <span class="material-symbols-outlined">
+                    </span>
+                  </a>
+                </div>
+              </div>
+            <div class = "card">
+                <img src="./assets/images/projets/javascript.png" alt="portfolio-architecte">
+                <div class="card-content">
+                  <h2>
+                    Portfolio d'architecte
+                  </h2>
+                  <p>
+                    Création d'une page web dynamique avec JavaScript permettant la modification de celle-ci (suppression, ajout et modification des informations).
+                  </p>
+                  <a href="https://github.com/Rostishkin/Projet03-Page-web-dynamique-JavaScript" class="button">
+                    Clickez ici pour decouvrir 
+                    <span class="material-symbols-outlined">
+                    </span>
+                  </a>
+                </div>
+            </div>
+            <div class = "card">
+                <img src="./assets/images/projets/kasa.png" alt="kasa">
+                <div class="card-content">
+                  <h2>
+                    Kasa
+                  </h2>
+                  <p>
+                    L'application web de location immobilière. Création avec React afin de maitriser les bases de routage, la reutilisation de composants, l'optimisation de performances et le SASS.
+                  </p>
+                  <a href="https://github.com/Rostishkin/Projet06-React-App-Kasa" class="button">
+                    Clickez ici pour decouvrir 
+                    <span class="material-symbols-outlined">
+                    </span>
+                  </a>
+                </div>
+            </div>
+            <div class = "card">
+              <img src="./assets/images/projets/back-end.png" alt="mon-vieux-grimoire">
+              <div class="card-content">
+                <h2>
+                  Mon vieux grimoire
+                </h2>
+                <p>
+                  Développement de back-end d'un site de notation de livres. Utilisation de NodeJS, MongoDB et Express afin de mettre en place une base de données stable.
+                </p>
+                <a href="https://github.com/Rostishkin/Projet07-Back-end-Mon-vieux-grimoire" class="button">
+                  Clickez ici pour decouvrir 
+                  <span class="material-symbols-outlined">
+                  </span>
+                </a>
+              </div>
+            </div>
+        </div>
+        </section>
+        <section>
+          <h3 class="projects-header">mes certificats</h3>
+        </section>
+        <!--CERTITIFICATES-->
+        <section>
+          <div class="center">
+            <div class="article-card">
+              <div class="content">
+                <p class="date">13 Mars, 2023</p>
+                <p class="title">Javascript Course</p>
+              </div>
+              <img src="./assets/images/certificats/javascript-1.webp" alt="javascript" />
+            </div>
+            <div class="article-card">
+              <div class="content">
+                <p class="date">23 Juin, 2023</p>
+                <p class="title">React Course</p>
+              </div>
+              <img src="./assets/images/certificats/react.webp" alt="react" />
+            </div>
+            <div class="article-card">
+              <div class="content">
+                <p class="date">29 Aout, 2023</p>
+                <p class="title">API-REST</p>
+              </div>
+              <img src="./assets/images/certificats/API-REST.webp" alt="api-rest" />
+            </div>
+            <div class="article-card">
+              <div class="content">
+                <p class="date">Date</p>
+                <p class="title">Nom</p>
+              </div>
+              <img src="" alt="image" />
+            </div>
+          </div>
+        </section>
+        <!--Contact form-->
+        <section>
+          <div>
+            <h3 class="contact-header">contact</h3>
+            <p class="contact-text">Cher visiteur,<br> n'hésitez pas à me contacter par mail via le formulaire ci-dessous. Vous pouvez également consulter mon CV.
+              Merci encore pour votre intérêt et votre contact. J'attends avec impatience d'entamer une conversation fructueuse avec vous. <br>Cordialement,Rostyslav</p>
+          </div>
+          <div class="container-contact">
+            <form>
+              <label for="fname" class="contact-form-text">Prénom</label>
+              <input type="text" id="fname" name="firstname" placeholder="Votre prénom...">
+              <label for="lname" class="contact-form-text">Nom de famille</label>
+              <input type="text" id="lname" name="lastname" placeholder="Votre nom de famille...">
+              <label for="object" class="contact-form-text">Objet de votre demande</label>
+              <select id="object" name="object" class="contact-form-option">
+                <option value="Offre d'emploi & collaboration">Offre d'emploi</option>
+                <option value="Offre de stage / alternance">Offre de stage / alternance</option>
+                <option value="autre">Autre</option>
+              </select>
+              <label for="subject" class="contact-form-text">Objet</label>
+              <textarea id="subject" name="subject" placeholder="Votre message" style="height:200px"></textarea>
+              <input type="submit" value="Submit">
+            </form>
+          </div> 
+        </section>
+    </main>
+    <!--FOOTER-->
+    <footer class="footer">
+      <div class="footer__addr">
+        <h1 class="footer__logo"><i class="fa-solid fa-fingerprint">Rostishkin</i></h1>
+        <div class="legal__links">
+          <p>© 2023 Rostishkin. All rights reserved</p>
+        </div>
+      </div>
+    </footer>
 </body>
 </html>
