@@ -662,6 +662,9 @@ button[type=submit]:hover {
     height: 50vh;
     width: 100%;
   }
+  #banner h1 {
+    font-size: 1.1em;
+  }
   .about-avatar-mini {
     display: none;
   }
