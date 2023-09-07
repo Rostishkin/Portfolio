@@ -185,7 +185,7 @@
         <!--Contact-->
           <h3 id="contact" class="contact-header">Contact</h3>
           <div class="contact">
-            <div class="contact-form">
+            <div id="contact-form" class="contact-form">
                 <p class="contact-text">Chèr visiteur,</p>
                 <p class="contact-text"> n'hésitez pas à me contacter par mail via le formulaire ci-dessous. Vous pouvez également consulter mon CV, mes réseaux sociaux ainsi que trouver mes contacts .
                 Merci encore pour votre intérêt et votre contact. J'attends avec impatience d'entamer une conversation fructueuse avec vous.</p>
@@ -198,7 +198,7 @@
                   <input type="email" id="email" name="email" placeholder="Votre adresse mail..." required>
                   <label for="objet" class="contact-form-text">Objet de votre demande</label>
                   <input type="text" id="objet" name="objet" placeholder="Objet de votre demande..." required>
-                  <label for="message" class="contact-form-text">Objet</label>
+                  <label for="message" class="contact-form-text">Message</label>
                   <textarea id="message" name="message" placeholder="Votre message" style="height:200px" required></textarea>
                   <button type="submit">Envoyer</button>
                 </form>
@@ -230,5 +230,13 @@
           <p>© 2023 Rostishkin. All rights reserved</p>
         </div>
     </footer>
+    <!--Script JS reinitialisation de valeurs formulaire-->
+    <script>
+      window.onbeforeunload = () => {
+      for(const form of document.getElementsByTagName('form')) {
+       form.reset();
+      }
+    }
+    </script>
   </body>
 </html>

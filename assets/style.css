@@ -261,14 +261,14 @@ header{
     margin-left: 1.7em;
     transition: inset 0.3s 0.3s ease-out;
     text-transform: uppercase;
-    font-size: 2.5em;
+    font-size: 2em;
   }
   .card p, .card a {
     position: absolute;
     opacity: 0;
     max-width: 100%;
     transition: opacity 0.3s ease-out;
-    font-size: 1.5em;
+    font-size: 1.2em;
   }
   .card p {
     inset: auto auto 80px 30px;
